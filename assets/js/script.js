@@ -165,3 +165,34 @@ window.addEventListener("mousemove", function (event) {
     parallaxItems[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`;
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdowns = document.querySelectorAll(".dropdown-item");
+
+  dropdowns.forEach((dropdown) => {
+    const toggle = dropdown.querySelector(".dropdown-toggle");
+
+    // Click event
+    toggle.addEventListener("click", (event) => {
+      event.preventDefault();
+      dropdown.classList.toggle("active");
+    });
+
+    // Hover event - Open on mouseenter
+    dropdown.addEventListener("mouseenter", () => {
+      dropdown.classList.add("active");
+    });
+
+    // Hover event - Close on mouseleave
+    dropdown.addEventListener("mouseleave", () => {
+      dropdown.classList.remove("active");
+    });
+
+    // Click outside to close dropdown
+    document.addEventListener("click", (event) => {
+      if (!dropdown.contains(event.target)) {
+        dropdown.classList.remove("active");
+      }
+    });
+  });
+});

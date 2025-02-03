@@ -706,6 +706,112 @@ body.nav-active {
   margin-block-end: 60px;
 }
 
+.dropdown-item a .navbar-link {
+  padding-inline-start: 0;
+  max-width: 100%;
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-link:is(:hover, :focus-visible, .active) {
+  color: var(--pink-konga);
+  transition: var(--transition-1);
+}
+
+.dropdown-link ion-icon {
+  font-size: 1.4rem;
+  transform: 0.4s;
+}
+
+.dropdown-menu {
+  margin: -30px 0 0 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+}
+
+.dropdown-item:is(:hover, :focus-visible, .active) .dropdown-menu {
+  max-height: 1000px;
+  transition: max-height 0.4s ease-in;
+}
+
+.dropdown-item:is(:hover, :focus-visible, .active) ion-icon {
+  transform: rotate(180deg);
+}
+
+.dropdown-sublink:hover {
+  color: var(--pink-konga);
+}
+
+.dropdown-sublink {
+  padding-inline-start: 20px;
+  padding-block: 10px;
+  font-size: 1.2rem;
+  color: var(--white);
+  transition: var(--transition-1);
+}
+
+@media screen and (min-width: 1200px) {
+  .dropdown-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .dropdown-sublink:hover {
+    color: var(--pink-konga);
+  }
+
+  .dropdown-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    background-color: #252525;
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s;
+  }
+
+  .dropdown-item {
+    position: relative;
+  }
+
+  .dropdown-item .dropdown-menu {
+    top: 100%;
+    left: 0;
+    width: 200px;
+  }
+
+  .dropdown-item.active .dropdown-menu {
+    max-height: 300px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown-item.active ion-icon {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-item:hover .dropdown-menu {
+    max-height: 300px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown-item:hover ion-icon {
+    transform: rotate(180deg);
+  }
+}
+
 .navbar-list {
   margin-block-end: 100px;
 }
