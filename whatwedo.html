@@ -7,8 +7,8 @@
     <!--
         Primary Tags
         -->
-    <title>Our Warehouses | Konga Group</title>
-    <meta name="title" content="Our Warehouses | Konga Group" />
+    <title>What We Do | Konga Group</title>
+    <meta name="title" content="What We Do | Konga Group" />
     <meta
       name="description"
       content="This is he about us page on Konga Group and how we live."
@@ -164,9 +164,12 @@
               </a>
             </li>
             <li class="navbar-item dropdown-item">
-              <a href="whatwedo.html" class="navbar-link dropdown-toggle">
+              <a
+                href="whatwedo.html"
+                class="navbar-link dropdown-toggle active"
+              >
                 <div class="separator"></div>
-                <div class="dropdown-link">
+                <div class="dropdown-link active">
                   <span class="span">What we do</span>
                   <ion-icon name="chevron-down-outline"></ion-icon>
                 </div>
@@ -205,10 +208,7 @@
               </a>
             </li>
             <li class="navbar-item">
-              <a
-                href="workplace.html"
-                class="navbar-link hover-underline active"
-              >
+              <a href="workplace.html" class="navbar-link hover-underline">
                 <div class="separator"></div>
                 <span class="span">Our Workplace</span>
               </a>
@@ -248,113 +248,247 @@
       <div class="main-content">
         <div
           class="breadcrumbs"
-          style="background-image: url('./assets/images/warehouse.jpg')"
+          style="background-image: url('./assets/images/workplace-cover.png')"
         >
           <div class="container content">
-            <h2>Our Warehouses</h2>
+            <h2>What We Do</h2>
             <ol>
               <li><a href="index.html">Home</a></li>
-              <li><a href="workplace.html">Our Workplace</a></li>
-              <li>Our Warehouses</li>
+              <li>What We Do</li>
             </ol>
           </div>
         </div>
 
-        <section class="section workplace-page">
+        <section class="section service-page">
           <div class="container">
-            <div class="workplace-content">
-              <h2 class="workplace-header text-center">Find us here</h2>
+            <div class="service-content" id="mission-vision">
+              <h2 class="service-vision">
+                It's not just about delivering products and services—it's about
+                creating meaningful connections that shape the future of
+                commerce.
+              </h2>
 
-              <p class="workplace-text text-center">
-                Konga operates a robust warehousing system with three
-                strategically located facilities in Lagos, Abuja, and Port
-                Harcourt. These warehouses are designed to optimize the storage,
-                distribution, and delivery of products to customers across
-                Nigeria. Each location is equipped with state-of-the-art
-                technology and skilled personnel to ensure efficiency, speed,
-                and accuracy. By limiting our operations to three key cities, we
-                can maintain the highest standards of inventory management while
-                reducing delivery times for customers nationwide.
+              <p class="service-mission">
+                The bedrock of what we do is
+                <strong>
+                  connecting millions of buyers and sellers, making everyday
+                  life easier with innovative solutions that truly work for you.
+                </strong>
+                <br />
+                <br />
+                Through our e-commerce marketplace, financial services,
+                logistics, and B2B solutions, we are breaking down barriers,
+                building connections, and driving growth across industries.
               </p>
             </div>
-            <div class="warehouse-grid">
-              <div class="warehouse-title">Lagos</div>
-              <div class="location-box">
-                <div class="topbox">
-                  <div class="icon-box">
-                    <ion-icon name="location-outline"></ion-icon>
-                  </div>
-                  <div class="title-box">
-                    <div class="location-heading">Konga Lagos Warehouse</div>
-                    <address class="location-address">
-                      3b Cocoa Industries Road Ogba
-                    </address>
-                  </div>
+          </div>
+        </section>
+
+        <section id="clients" class="clients section">
+          <div class="container">
+            <h2 class="headline-1">Trusted by global brands worldwide</h2>
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 2500
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 2,
+                      "spaceBetween": 40
+                    },
+                    "480": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 60
+                    },
+                    "640": {
+                      "slidesPerView": 4,
+                      "spaceBetween": 80
+                    },
+                    "1200": {
+                      "slidesPerView": 8,
+                      "spaceBetween": 120
+                    }
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <a href="https://www.konga.com/" target="_blank">
+                    <img
+                      src="./assets/images/konga.com.svg"
+                      class="img-fluid"
+                      alt="Konga marketplace"
+                    />
+                  </a>
                 </div>
-                <div class="separator-line"></div>
-                <div class="bottombox">
-                  <div class="content-box">
-                    <div class="work-heading">Working Hours</div>
-                    <div class="work-detail">Monday - Saturday, 8am - 6pm</div>
-                  </div>
-                  <div class="content-box">
-                    <div class="work-heading">Phone Number</div>
-                    <div class="work-detail">08033392362</div>
-                  </div>
+                <div class="swiper-slide">
+                  <a
+                    href="https://www.konga.com/content/Health"
+                    target="_blank"
+                  >
+                    <img
+                      src="./assets/images/konga health.svg"
+                      class="img-fluid"
+                      alt="Konga Health"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.kongapay.com/" target="_blank">
+                    <img
+                      src="./assets/images/kongapay.svg"
+                      class="img-fluid"
+                      alt="KongaPay"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://travel.konga.com/" target="_blank">
+                    <img
+                      src="./assets/images/ktt.svg"
+                      class="img-fluid"
+                      alt="Konga Travels & Tours"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://www.instagram.com/tdilife_/" target="_blank">
+                    <img
+                      src="./assets/images/tdlife.svg"
+                      class="img-fluid"
+                      alt="TDlife"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://logistics.konga.com/" target="_blank">
+                    <img
+                      src="./assets/images/konga logistics.svg"
+                      class="img-fluid"
+                      alt="Konga Logistics"
+                    />
+                  </a>
                 </div>
               </div>
-              <div class="warehouse-title">Abuja</div>
-              <div class="location-box">
-                <div class="topbox">
-                  <div class="icon-box">
-                    <ion-icon name="location-outline"></ion-icon>
+            </div>
+          </div>
+        </section>
+
+        <section class="section about" aria-label="about" id="about">
+          <div class="container">
+            <div class="about-container section-title text-center">
+              <p>Latest News</p>
+            </div>
+            <div class="content">
+              <div class="blog-container">
+                <div class="blog-card">
+                  <div class="blog-image">
+                    <img
+                      src="./assets/images/Prince-Sale-Conference.jpeg"
+                      alt="Blog Thumbnail"
+                    />
                   </div>
-                  <div class="title-box">
-                    <div class="location-heading">Konga Abuja Warehouse</div>
-                    <address class="location-address">
-                      Commerce Plaza, Behind Old Secretariat, Area 1, Garki
-                    </address>
-                  </div>
-                </div>
-                <div class="separator-line"></div>
-                <div class="bottombox">
-                  <div class="content-box">
-                    <div class="work-heading">Working Hours</div>
-                    <div class="work-detail">Monday - Saturday, 8am - 6pm</div>
-                  </div>
-                  <div class="content-box">
-                    <div class="work-heading">Phone Number</div>
-                    <div class="work-detail">07088325810, 08107844168</div>
-                  </div>
-                </div>
-              </div>
-              <div class="warehouse-title">Port Harcourt</div>
-              <div class="location-box">
-                <div class="topbox">
-                  <div class="icon-box">
-                    <ion-icon name="location-outline"></ion-icon>
-                  </div>
-                  <div class="title-box">
-                    <div class="location-heading">
-                      Konga Port Harcourt Warehouse
+                  <div class="blog-content">
+                    <div class="blog-footer">
+                      <span class="blog-date">InfoTech</span>
+                      <span class="blog-date">Jan 12, 2025</span>
                     </div>
-                    <address class="location-address">
-                      146 Trans Amadi Industrial Layout, Oginigba
-                    </address>
+                    <a
+                      href="https://championnews.com.ng/2024/12/11/ceo-of-konga-predicts-bright-future-for-nigerias-e-commerce-despite-current-hurdles/"
+                      target="_blank"
+                      class="blog-title"
+                    >
+                      CEO Of KONGA Predicts Bright Future For Nigeria’s
+                      E-Commerce Despite Current Hurdles
+                    </a>
+                    <p class="blog-description">
+                      The CEO of Africa’s foremost online shopping platform,
+                      Konga Group, Prince Nnamdi Ekeh, has expressed optimism in
+                      the E-commerce sector despite the current challenges
+                      facing the e-commerce business in Nigeria and most parts
+                      of the African continent. Speaking at the 6th Edition of
+                      Nigeria sales conference organized by George Emetuche, the
+                      CEO of the Selling Champion Ltd, held at the Welcome
+                      Centre Hotel Lagos, Prince Nnamdi Ekeh spoke on the topic
+                      “The Nigeria E-Commerce and Retail Business: challenges
+                      and prospects.”
+                    </p>
                   </div>
                 </div>
-                <div class="separator-line"></div>
-                <div class="bottombox">
-                  <div class="content-box">
-                    <div class="work-heading">Working Hours</div>
-                    <div class="work-detail">Monday - Saturday, 8am - 6pm</div>
+
+                <div class="blog-card">
+                  <div class="blog-image">
+                    <img
+                      src="./assets/images/Konga.fw_.png"
+                      alt="Blog Thumbnail"
+                    />
                   </div>
-                  <div class="content-box">
-                    <div class="work-heading">Phone Number</div>
-                    <div class="work-detail">08035404507</div>
+                  <div class="blog-content">
+                    <div class="blog-footer">
+                      <span class="blog-date">Technology</span>
+                      <span class="blog-date">Dec 24, 2024</span>
+                    </div>
+                    <a
+                      href="https://punchng.com/konga-to-unveil-ai-powered-radio-station-in-lagos/"
+                      target="_blank"
+                      class="blog-title"
+                    >
+                      Konga to unveil AI-powered radio station in Lagos
+                    </a>
+                    <p class="blog-description">
+                      Konga to unveil AI-powered radio station in Lagos 24th
+                      December 2024 Konga.fw By Justice Okamgba Konga, a leading
+                      e-commerce group, is set to launch Africa’s first
+                      AI-powered FM radio station in Lagos, scheduled for debut
+                      in January 2025. The station, KongaFM, will blend
+                      technology, entertainment, and commerce to foster
+                      impactful connections across Nigeria and beyond. This was
+                      confirmed in a statement released on Monday.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="blog-card">
+                  <div class="blog-image">
+                    <img
+                      src="./assets/images/health.jpg"
+                      alt="Blog Thumbnail"
+                    />
+                  </div>
+                  <div class="blog-content">
+                    <div class="blog-footer">
+                      <span class="blog-date">Beauty & Health</span>
+                      <span class="blog-date">July 6, 2024</span>
+                    </div>
+                    <a href="#" target="_blank" class="blog-title">
+                      Konga Partners with L’Oréal at Konga CeraVe Launch
+                      Campaign
+                    </a>
+                    <p class="blog-description">
+                      Discover how Konga is revolutionizing retail trade across
+                      Africa by creating a seamless ecosystem for buyers and
+                      sellers.
+                    </p>
                   </div>
                 </div>
               </div>
+
+              <a href="media.html" class="btn btn-primary">
+                <span class="text text-1">View all News</span>
+                <span class="text text-2" aria-hidden="true"
+                  >View all News</span
+                >
+              </a>
             </div>
           </div>
         </section>
@@ -541,8 +675,15 @@
       </div>
     </main>
 
-    <!--Custom js link-->
+    <!--
+    Custom JS Links
+    -->
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/external/glightbox/js/glightbox.min.js"></script>
+    <script src="./assets/external/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/external/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/external/aos/aos.js"></script>
+
     <!--Ionicon Link-->
     <script
       type="module"
