@@ -196,3 +196,50 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+/**
+ * Animation for choosing categories on media page
+ */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const blogCards = document.querySelectorAll(".blog-card-filter");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // Remove active class from all buttons
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+
+      const category = this.getAttribute("data-category");
+
+      blogCards.forEach((card) => {
+        const cardCategory = card.getAttribute("data-category");
+
+        if (category === "all" || cardCategory === category) {
+          card.classList.remove("hidden", "no-display");
+
+          setTimeout(() => {
+            card.style.position = "relative";
+          }, 100);
+        } else {
+          card.classList.add("hidden");
+
+          setTimeout(() => {
+            card.classList.add("no-display");
+            card.style.position = "absolute";
+          }, 400);
+        }
+      });
+
+      // 🔥 This ensures hidden items are fully re-added when switching filters
+      setTimeout(() => {
+        blogCards.forEach((card) => {
+          if (!card.classList.contains("hidden")) {
+            card.classList.remove("no-display");
+          }
+        });
+      }, 400);
+    });
+  });
+});

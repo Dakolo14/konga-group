@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest Articles - Blog Section</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+
+      .blog-container {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .heading {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      .category-filter {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .category-filter button {
+        padding: 10px 15px;
+        border: none;
+        background: #ddd;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+
+      .category-filter button.active {
+        background: #007bff;
+        color: white;
+      }
+
+      /* Blog Grid Layout */
+      .blog-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .blog-card {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease-in-out;
+        width: calc(33.333% - 20px);
+        min-width: 300px;
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      .blog-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .blog-card h3 {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+
+      .blog-card p {
+        font-size: 14px;
+        color: #666;
+        margin-top: 5px;
+      }
+
+      /* Animation for hiding */
+      .blog-card.hidden {
+        opacity: 0;
+        transform: scale(0.8);
+        pointer-events: none;
+        position: absolute;
+      }
+
+      /* Completely remove after animation */
+      .blog-card.no-display {
+        display: none;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .category-filter {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .category-filter button {
+          padding: 8px 12px;
+          font-size: 14px;
+        }
+
+        .blog-card {
+          width: calc(50% - 20px);
+        }
+      }
+
+      @media (max-width: 500px) {
+        .blog-card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blog-container">
+      <h1 class="heading">Latest Articles</h1>
+
+      <!-- Categories -->
+      <div class="category-filter">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="e-commerce">
+          E-commerce
+        </button>
+        <button class="filter-btn" data-category="technology">
+          Technology
+        </button>
+        <button class="filter-btn" data-category="beauty-health">
+          Beauty & Health
+        </button>
+      </div>
+
+      <!-- Blog Grid -->
+      <div class="blog-grid">
+        <div class="blog-card" data-category="e-commerce">
+          <img
+            src="https://via.placeholder.com/300x180"
+            alt="E-commerce Blog"
+          />
+          <h3>E-commerce Trends in 2024</h3>
+          <p>
+            Discover the latest trends in online shopping and how businesses are
+            adapting.
+          </p>
+        </div>
+
+        <div class="blog-card" data-category="technology">
+          <img
+            src="https://via.placeholder.com/300x180"
+            alt="Technology Blog"
+          />
+          <h3>The Future of AI</h3>
+          <p>
+            How artificial intelligence is transforming industries worldwide.
+          </p>
+        </div>
+
+        <div class="blog-card" data-category="beauty-health">
+          <img src="https://via.placeholder.com/300x180" alt="Beauty Blog" />
+          <h3>Skincare Routine Essentials</h3>
+          <p>
+            Tips for maintaining a glowing skin with the best beauty products.
+          </p>
+        </div>
+
+        <div class="blog-card" data-category="e-commerce">
+          <img
+            src="https://via.placeholder.com/300x180"
+            alt="E-commerce Blog"
+          />
+          <h3>How to Grow an Online Store</h3>
+          <p>Strategies for scaling an e-commerce business successfully.</p>
+        </div>
+
+        <div class="blog-card" data-category="technology">
+          <img
+            src="https://via.placeholder.com/300x180"
+            alt="Technology Blog"
+          />
+          <h3>Cybersecurity in 2024</h3>
+          <p>
+            How to protect your digital assets in an increasingly connected
+            world.
+          </p>
+        </div>
+
+        <div class="blog-card" data-category="beauty-health">
+          <img src="https://via.placeholder.com/300x180" alt="Beauty Blog" />
+          <h3>Best Organic Skincare Products</h3>
+          <p>Top organic products that are making a difference in skincare.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const blogCards = document.querySelectorAll(".blog-card");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            const category = this.getAttribute("data-category");
+
+            blogCards.forEach((card) => {
+              const cardCategory = card.getAttribute("data-category");
+
+              if (category === "all" || cardCategory === category) {
+                card.classList.remove("hidden", "no-display");
+
+                setTimeout(() => {
+                  card.style.position = "relative";
+                }, 100);
+              } else {
+                card.classList.add("hidden");
+
+                setTimeout(() => {
+                  card.classList.add("no-display");
+                  card.style.position = "absolute";
+                }, 400);
+              }
+            });
+
+            // 🔥 This ensures hidden items are fully re-added when switching filters
+            setTimeout(() => {
+              blogCards.forEach((card) => {
+                if (!card.classList.contains("hidden")) {
+                  card.classList.remove("no-display");
+                }
+              });
+            }, 400);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
