@@ -243,3 +243,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+/**
+ * Modal for Board and Executive Members
+ */
+
+function openModal(element) {
+  document.getElementById("modal-title").innerText =
+    element.getAttribute("data-title");
+  document.getElementById("modal-subtitle").innerText =
+    element.getAttribute("data-subtitle");
+  document.getElementById("modal-description").innerText =
+    element.getAttribute("data-description");
+  document.getElementById("modal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+
+function closeModalOutside(event) {
+  if (event.target.id === "modal") {
+    closeModal();
+  }
+}

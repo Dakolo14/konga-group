@@ -1612,6 +1612,21 @@ body.nav-active {
   padding: 1rem;
 }
 
+@media (max-width: 500px) {
+  .blog-container,
+  .press-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .blog-card {
+    width: 100% !important;
+  }
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -2927,6 +2942,13 @@ body.nav-active {
     gap: 100px;
   }
 
+  .board-page .container {
+    display: grid;
+    justify-content: center;
+    gap: 100px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .service-page .container {
     display: grid;
     gap: 100px;
@@ -3081,6 +3103,15 @@ body.nav-active {
   text-align: center;
   text-transform: uppercase;
   font-family: var(--fontFamily-Poppins);
+}
+
+.media-new-subheading {
+  color: var(--eerie-black-1);
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  font-family: var(--fontFamily-Poppins);
   margin-bottom: 24px;
 }
 
@@ -3167,7 +3198,7 @@ body.nav-active {
 
 .story img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   border-radius: 10px 0 0 10px;
   object-fit: cover;
 }
@@ -3236,6 +3267,47 @@ body.nav-active {
 }
 
 /*-----------------------------------*\
+#MEDIA PAGE PRESS SECTION CSS CODE
+\*-----------------------------------*/
+
+.press-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4rem;
+  padding: 1rem 3rem;
+}
+
+.press-card {
+  background-color: transparent;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.press-card:hover {
+  transform: translateY(-0.5px);
+  box-shadow: 0 1px 12px #e6e6e6;
+}
+
+.press-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.press-content {
+  padding: 4rem 3rem;
+}
+
+.press-content .btn {
+  padding: 0.75rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-inline: 0;
+}
+
+/*-----------------------------------*\
 #MEDIA PAGE ARTICLE SECTION CSS CODE
 \*-----------------------------------*/
 
@@ -3270,7 +3342,7 @@ body.nav-active {
 }
 
 .category-filter button {
-  padding: 10px 15px;
+  padding: 6px 20px;
   border: none;
   background: #fef2f8;
   color: #ff88c8;
@@ -3339,6 +3411,17 @@ body.nav-active {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .article-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .article-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .category-filter {
     flex-wrap: wrap;
     justify-content: center;
@@ -3355,7 +3438,398 @@ body.nav-active {
 }
 
 @media (max-width: 500px) {
-  .blog-card {
+  .blog-card-filter {
     width: 100%;
   }
+  .article-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*-----------------------------------*\
+#OUR TIMELINE PAGE ARTICLE SECTION CSS CODE
+\*-----------------------------------*/
+
+.body_content {
+  display: flex;
+  animation: fadeEffect 1s;
+  flex-wrap: wrap;
+}
+.body_content h1 {
+  font-size: 30px;
+  font-weight: 100;
+  color: #ed1c24;
+  margin: 30px 0 10px;
+}
+.w-100 {
+  width: 100%;
+}
+.history-wrapper {
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+  padding: 42px 0;
+}
+.history-wrapper h2 {
+  position: absolute;
+  left: -40%;
+  top: 50%;
+  transform: rotate(270deg);
+  color: #acacac;
+}
+.history-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.history-row > div {
+  width: 50%;
+  padding-top: 10px;
+}
+.history-img-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.hostory-img {
+  max-width: 300px;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.hostory-date {
+  width: 40%;
+  position: relative;
+}
+.hostory-date:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: calc(100% - 25px);
+  background: #ed017f;
+  top: 50%;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+.hostory-date h3 {
+  position: absolute;
+  right: 55px;
+  top: 50%;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ed017f;
+  transform: translateY(-50%);
+  margin-top: -23px;
+}
+.hostory-date img {
+  min-height: 234px;
+  float: right;
+  width: 30px;
+  object-fit: contain;
+  height: 100%;
+}
+.history-content-title {
+  position: absolute;
+  right: 15%;
+  top: 52%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ed017f;
+  text-align: center;
+  line-height: 20px;
+  transform: translateY(-50%);
+  margin-top: -23px;
+}
+.history-content-in span {
+  color: var(--pink-konga);
+  font-weight: 600;
+}
+.history-content-in span:hover {
+  text-decoration: underline;
+}
+.righty {
+  padding-right: 32px;
+  text-align: right;
+}
+.history-content-title h3 {
+  position: absolute;
+  right: 32%;
+  top: 18%;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ed017f;
+  transform: translateY(-50%);
+  margin-top: -23px;
+}
+.history-row > div {
+  width: 50%;
+  padding-top: 10px;
+}
+.history-content {
+  display: flex;
+  align-items: center;
+}
+.history-content {
+  padding-left: 30px;
+}
+.history-content {
+  padding-left: 30px;
+}
+.history-content-in {
+  width: 100%;
+  color: var(--eerie-black-1);
+  margin: 12px 24px 12px 0;
+}
+
+.no-site-customer > div p {
+  color: #ec2227;
+  font-size: 24px;
+}
+.history-content p {
+  line-height: 1.4;
+}
+p {
+  margin-bottom: 15px;
+}
+.history-full {
+  width: 100%;
+  position: relative;
+}
+.history-full:before {
+  content: "";
+  position: absolute;
+  left: -50%;
+  right: -50%;
+  background: #dfdfdf;
+  height: 100%;
+}
+.history-wrapper {
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+}
+.history-full .history-wrapper h2 {
+  color: #fff;
+}
+.history-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.history-row:nth-of-type(2n) .hostory-date:before {
+  background: #f2f2f2;
+  width: 100%;
+}
+
+.hostory-date img:nth-child(odd) {
+  float: left;
+  align-items: center;
+  justify-content: center;
+  margin-left: -30px;
+}
+
+.june-28--19-row .history-img-date {
+  flex-direction: row-reverse;
+}
+
+.june-28--19-row .hostory-date img {
+  float: left;
+  align-items: center;
+  justify-content: center;
+  margin-left: -30px;
+}
+
+.hostory-date img {
+  margin-top: 0px;
+}
+
+.june-28--19-row {
+  flex-direction: row-reverse !important;
+}
+
+.history-img-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .history-row > div {
+    width: 100%;
+  }
+
+  .history-row > div {
+    padding: 0 !important;
+  }
+
+  .history-row > div * {
+    text-align: left;
+  }
+
+  .hostory-img {
+    max-width: 100%;
+    margin: 0 auto 15px;
+  }
+
+  .hostory-date {
+    display: none;
+  }
+  .history-full:before {
+    top: 0;
+  }
+  .history-full {
+    padding: 31px 0;
+    margin-bottom: 30px;
+  }
+  .history-wrapper h2 {
+    display: block;
+    position: static;
+    transform: none;
+    margin-bottom: 20px;
+  }
+  .history-full {
+    padding: 31px 0;
+    margin-bottom: 30px;
+  }
+  .history-full:before {
+    top: 0;
+  }
+  .history-row:nth-of-type(2n) {
+    flex-direction: column-reverse;
+  }
+  .june-28--19-row {
+    flex-direction: column !important;
+  }
+}
+
+/*-----------------------------------*\
+#BOARD OF DIRECTORS PAGE CSS CODE
+\*-----------------------------------*/
+
+.board-page .container {
+  display: grid;
+  justify-content: center;
+  gap: 42px;
+  grid-template-columns: repeat(4, 1fr);
+  height: fit-content;
+}
+
+.modal-card {
+  background: white;
+  border-radius: 8px;
+  padding: 0;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+.modal-card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px 8px 0 0;
+}
+.modal-card button {
+  margin-top: 10px;
+  margin-inline: auto;
+  padding: 0;
+  background-color: transparent;
+  color: var(--pink-konga);
+  border: none;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 14px auto;
+}
+
+.modal-card button:hover {
+  text-decoration: underline;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 32px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--eerie-black-1);
+  background-color: #e5e5e5;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.close:hover {
+  background-color: #d5d5d5;
+}
+
+.modal-heading {
+  font-size: 16px;
+  line-height: 24px;
+  padding-inline: 8px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  margin-top: 12px;
+  color: var(--eerie-black-1);
+}
+
+.modal-text {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 0px;
+  padding-inline: 8px;
+  line-height: 18px;
+  color: #757575;
+}
+
+#modal-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 12px;
+  padding: 0 12px 0 0;
+  color: var(--pink-konga);
+  text-align: left;
+}
+
+#modal-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 12px 0 0;
+  color: var(--pink-konga);
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+#modal-description {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 12px 0 0;
+  text-align: left;
+  margin-top: 0px;
+  line-height: 18px;
+  color: var(--eerie-black-1);
 }
