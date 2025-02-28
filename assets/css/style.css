@@ -1296,7 +1296,8 @@ body.nav-active {
   }
   .article-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr) !important;
+    justify-items: center;
   }
   .blog-container,
   .press-container {
@@ -1673,7 +1674,7 @@ body.nav-active {
 
 .corporate {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
   height: 500px;
   gap: 2rem;
@@ -2305,6 +2306,10 @@ body.nav-active {
     margin-inline: auto;
   }
 
+  .media-article {
+    max-width: 1400px !important;
+  }
+
   .about-content {
     max-width: 100% !important;
     margin-inline: auto;
@@ -2823,6 +2828,8 @@ body.nav-active {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  max-width: 1200px !important;
+  margin-inline: auto;
 }
 
 .workplace-page .workplace-header {
@@ -2892,7 +2899,8 @@ body.nav-active {
 .intern-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 32px;
+  row-gap: 42px;
   margin: 0 12px;
   padding: 24px 64px;
 }
@@ -2968,7 +2976,8 @@ body.nav-active {
 }
 
 .humansOfKonga img {
-  width: 100%;
+  width: 85%;
+  margin-inline: auto;
 }
 
 /* Breadcrumbs list item spacing */
@@ -3144,6 +3153,11 @@ body.nav-active {
     display: grid;
     justify-content: center;
     gap: 82px;
+  }
+
+  .workplace-page .workplace-content {
+    max-width: 1000px;
+    margin-inline: auto;
   }
 
   .breadcrumbs {
@@ -4268,4 +4282,110 @@ p {
   font-size: 1.7rem;
   margin-top: 24px;
   font-weight: 400;
+}
+
+/*-----------------------------------*\
+#CAREER SECTION CSS CODE
+\*-----------------------------------*/
+
+.career-section .container {
+  padding: 50px 20px;
+  margin-bottom: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.career-header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.career-subheading {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.career-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+.career-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.career-box {
+  background: transparent;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  color: var(--eerie-black-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+.career-box h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--eerie-black-1);
+}
+.career-box p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+.career-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .career-grid {
+    grid-template-columns: 1fr;
+  }
+  .career-column {
+    margin-bottom: 20px;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.middle-text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: left;
+}
+
+.middle-text .workplace-header {
+  text-align: left;
+}
+
+.middle-text .humansOfKonga img {
+  width: 100%;
+}
+
+.workplace-list-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--eerie-black-4);
+  font-family: var(--fontFamily-Poppins);
+  margin-bottom: 1.4rem;
+  list-style-type: square;
+  margin-left: 24px;
 }

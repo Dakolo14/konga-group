@@ -228,13 +228,42 @@
                 </ul>
               </a>
             </li>
-            <li class="navbar-item">
+            <li class="navbar-item dropdown-item">
               <a
                 href="workplace.html"
-                class="navbar-link hover-underline active"
+                class="navbar-link dropdown-toggle active"
               >
                 <div class="separator"></div>
-                <span class="span">Our Workplace</span>
+                <div class="dropdown-link active">
+                  <span class="span">Workplace</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+
+                <ul class="dropdown-menu">
+                  <li class="dropdown-subitem">
+                    <a href="diversity.html" class="dropdown-sublink"
+                      >Diversity</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a href="lifeatkonga.html" class="dropdown-sublink"
+                      >Life At Konga</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a href="career.html" class="dropdown-sublink"
+                      >Work With Us</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a href="intern.html" class="dropdown-sublink"
+                      >Intern Stories</a
+                    >
+                  </li>
+                </ul>
               </a>
             </li>
             <li class="navbar-item">
@@ -316,9 +345,9 @@
                     a common purpose.
                   </div>
                   <a href="diversity.html" class="btn btn-secondary">
-                    <span class="text text-1">Read More</span>
+                    <span class="text text-1">Our diversity</span>
                     <span class="text text-2" aria-hidden="true"
-                      >Read More</span
+                      >Our diversity</span
                     >
                   </a>
                 </div>
@@ -339,10 +368,8 @@
                     serve.
                   </div>
                   <a href="lifeatkonga.html" class="btn btn-secondary">
-                    <span class="text text-1">Read More</span>
-                    <span class="text text-2" aria-hidden="true"
-                      >Read More</span
-                    >
+                    <span class="text text-1">Explore</span>
+                    <span class="text text-2" aria-hidden="true">Explore</span>
                   </a>
                 </div>
               </div>
@@ -357,16 +384,14 @@
                 <div class="workplace-card-content">
                   <div class="card-header">Work with Us</div>
                   <div class="card-text">
-                    Join us at Konga, where innovation meets purpose. Whether
-                    you're a problem-solver, a creative thinker, or a passionate
-                    trailblazer, you'll find a place here to grow, make an
-                    impact, and be part of a team that's shaping the future of
-                    commerce, trade, and beyond.
+                    Are you a problem-solver, a creative thinker, or a
+                    passionate trailblazer? Join us at Konga, where innovation
+                    meets purpose.
                   </div>
                   <a href="career.html" class="btn btn-secondary">
-                    <span class="text text-1">Read More</span>
+                    <span class="text text-1">See Open Positions</span>
                     <span class="text text-2" aria-hidden="true"
-                      >Read More</span
+                      >See Open Positions</span
                     >
                   </a>
                 </div>
@@ -404,23 +429,24 @@
                 <div class="intern-card">
                   <div class="intern-card-image">
                     <img
-                      src="./assets/images/Chidebere.jpeg"
+                      src="./assets/images/gender.jpeg"
                       alt="Love for our customers Icon"
                     />
                   </div>
                   <div class="intern-card-content">
                     <div class="card-header">
-                      Chidebere Daniel<span>Junior Backend Developer</span>
+                      Omolola Omotalade<span>Quality Assurance Engineer</span>
                     </div>
                     <div class="card-text">
-                      My journey began as an intern, where I had the invaluable
-                      opportunity to immerse myself in real-world software
-                      engineering processes over the past year. During my
-                      internship, I gained hands-on experience with advanced
-                      technologies, including Docker, DevOps practices, and
-                      command-line interfaces (CLI). This exposure allowed me to
-                      enhance my skills and deepen my understanding of both
-                      frontend and backend development…
+                      I had the incredible opportunity to begin my professional
+                      journey with KongaPay as a software engineering intern.
+                      During my internship, I was able to dive deep into various
+                      aspects of software development, including understanding
+                      the architecture of payment systems, contributing to live
+                      projects, and collaborating closely with a dynamic
+                      engineering team. The experience sharpened my
+                      problem-solving skills and gave me a solid foundation in
+                      coding practices, application development, and teamwork.
                     </div>
                     <a href="diversity.html" class="btn btn-secondary">
                       <span class="text text-1">Read More</span>
@@ -462,9 +488,81 @@
               </div>
             </div>
 
-            <div class="humansOfKonga">
-              <img src="./assets/images/Career.png" alt="Career Section" />
-            </div>
+            <section class="career-section">
+              <div class="container">
+                <div class="intern-head">
+                  <div class="intern-new-heading">Careers</div>
+                  <div class="intern-new-subheading">
+                    Join a dynamic team where your ideas matter, your growth is
+                    prioritized, and your contributions make an impact every
+                    single day. Become a Konganian; search our open positions.
+                  </div>
+                </div>
+                <div class="career-grid">
+                  <div class="career-column left-column">
+                    <div class="career-box">
+                      <img
+                        src="./assets/images/innovation.svg"
+                        alt="Innovation Icon"
+                      />
+                      <h3>Innovation</h3>
+                      <p>
+                        We harness creativity and technology to drive seamless,
+                        meaningful experiences that continuously evolve with our
+                        users' needs.
+                      </p>
+                    </div>
+                    <div class="career-box">
+                      <img src="./assets/images/growth.svg" alt="Growth Icon" />
+                      <h3>Growth</h3>
+                      <p>
+                        We empower growth by creating opportunities that inspire
+                        personal achievement and collective success.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="career-column middle-column">
+                    <img
+                      src="./assets/images/career.jpg"
+                      alt="Teamwork"
+                      class="career-image"
+                    />
+                  </div>
+                  <div class="career-column right-column">
+                    <div class="career-box">
+                      <img
+                        src="./assets/images/heart.svg"
+                        alt="Compassion Icon"
+                      />
+                      <h3>Compassion</h3>
+                      <p>
+                        We deeply care for the well-being of our users, sharing
+                        uplifting verses that inspire peace and comfort in every
+                        moment
+                      </p>
+                    </div>
+                    <div class="career-box">
+                      <img
+                        src="./assets/images/shield.svg"
+                        alt="Integrity Icon"
+                      />
+                      <h3>Integrity</h3>
+                      <p>
+                        With honesty and transparency, we build trust and foster
+                        relationships rooted in respect and accountability.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="career.html" class="btn btn-primary">
+                  <span class="text text-1">Work With Us</span>
+                  <span class="text text-2" aria-hidden="true"
+                    >Work With Us</span
+                  >
+                </a>
+              </div>
+            </section>
           </div>
         </section>
 
