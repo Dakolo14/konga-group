@@ -1211,7 +1211,7 @@ body.nav-active {
 
 .about-talk {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
   gap: 80px;
@@ -2772,7 +2772,7 @@ body.nav-active {
   display: flex;
   flex-direction: column;
   gap: 42px;
-  padding: 80px 0;
+  padding: 42px 0;
 }
 
 .strategy-title {
@@ -2804,7 +2804,7 @@ body.nav-active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 64px;
+  gap: 42px;
   color: var(--eerie-black-3);
 }
 
@@ -2960,7 +2960,6 @@ body.nav-active {
   color: var(--eerie-black-4);
 }
 
-.workplace-card-content .card-text,
 .intern-card-content .card-text {
   font-size: 1.4rem;
   font-weight: 400;
@@ -2973,6 +2972,19 @@ body.nav-active {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 1.4rem;
+}
+
+.workplace-card-content .card-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--eerie-black-4);
+  font-family: var(--fontFamily-Poppins);
+  margin-bottom: 1.4rem;
+}
+
+.diversity-human img {
+  cursor: auto;
 }
 
 .humansOfKonga img {
@@ -3326,6 +3338,10 @@ body.nav-active {
 
 .explore {
   color: var(--pink-konga);
+}
+
+.explore:hover {
+  text-decoration: underline;
 }
 
 .media-new-subheading,
@@ -4388,4 +4404,83 @@ p {
   margin-bottom: 1.4rem;
   list-style-type: square;
   margin-left: 24px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1390px) {
+  .hero-text {
+    max-width: 900px;
+  }
+
+  .container,
+  :is(.service-page, .portfolio, .about-page, .about) .container {
+    max-width: 1100px;
+    width: 100%;
+    padding: 0 64px;
+    margin-inline: auto;
+  }
+
+  .workplace-container {
+    padding: 0 82px;
+    margin-inline: auto;
+    justify-content: center;
+  }
+
+  .media-new-subheading,
+  .intern-new-subheading {
+    color: var(--eerie-black-4);
+    margin: 0 92px;
+  }
+
+  .service-page .service-content,
+  .workplace-page .service-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 82px;
+    align-items: center;
+    padding: 0 32px;
+  }
+
+  .about-content {
+    max-width: 100%;
+    padding: 0px;
+  }
+
+  .about-page .about-content {
+    display: flex;
+    padding: 0px 82px;
+  }
+
+  .workplace-page .about-talk {
+    gap: 64px;
+  }
+
+  .value-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 0 82px;
+  }
+  .glance-text {
+    padding: 0 24px;
+  }
+  .strategy-title {
+    padding: 0 82px;
+  }
+  .strategy-container {
+    padding: 42px 82px;
+  }
+  .history img {
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .cover-card .container {
+    padding: 0 64px;
+    gap: 24px;
+  }
+
+  .board-page .container {
+    gap: 24px;
+  }
 }
