@@ -723,6 +723,7 @@ body.nav-active {
 
 .dropdown-link:is(:hover, :focus-visible, .active) {
   color: var(--pink-konga);
+  font-weight: 700;
   transition: var(--transition-1);
 }
 
@@ -753,6 +754,7 @@ body.nav-active {
 
 .dropdown-sublink:hover {
   color: var(--pink-konga);
+  font-weight: 700;
 }
 
 .dropdown-sublink {
@@ -843,6 +845,7 @@ body.nav-active {
 
 .navbar-link:is(:hover, :focus-visible, .active) .span {
   color: var(--pink-konga);
+  font-weight: 700;
   transform: translateX(20px);
 }
 
@@ -1602,7 +1605,7 @@ body.nav-active {
 }
 
 .each-card .block-content-text {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--white);
   text-align: left;
@@ -1941,7 +1944,7 @@ body.nav-active {
   bottom: 20px;
   right: 20px;
   background-color: var(--pink-konga);
-  color: hsla(40, 12%, 5%, 1);
+  color: white;
   font-size: 22px;
   width: 50px;
   height: 50px;
@@ -2118,7 +2121,7 @@ body.nav-active {
   }
 
   .grid-list {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
   }
 
   :is(.service, .portfolio, .about) .container {
@@ -2277,7 +2280,7 @@ body.nav-active {
 
   .footer .grid-list {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
   }
 
   .footer-brand {
@@ -3317,6 +3320,48 @@ body.nav-active {
   text-transform: uppercase;
   font-family: var(--fontFamily-Poppins);
   margin-bottom: 64px;
+}
+
+.media-headings {
+  color: var(--eerie-black-1);
+  margin: 0;
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: var(--fontFamily-Poppins);
+  margin-bottom: 42px;
+}
+
+.media-text {
+  text-align: left;
+  color: var(--eerie-black-1);
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: var(--fontFamily-Poppins);
+  margin-bottom: 12px;
+  margin-left: 0;
+}
+
+.media-list li {
+  text-align: left;
+  color: var(--eerie-black-1);
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: var(--fontFamily-Poppins);
+  margin-bottom: 12px;
+  list-style: disc !important;
+}
+
+.media-lists li {
+  text-align: left;
+  color: var(--eerie-black-1);
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: var(--fontFamily-Poppins);
+  margin-bottom: 12px;
+  list-style: decimal !important;
 }
 
 .blog {
@@ -4483,5 +4528,22 @@ p {
 
   .board-page .container {
     gap: 24px;
+  }
+
+  .each-card {
+    width: 100%;
+    max-width: 250px;
+    height: 237px;
+    padding: 20px;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.15); /* Transparent white background */
+    backdrop-filter: blur(20px); /* Blurred background effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for definition */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 }
