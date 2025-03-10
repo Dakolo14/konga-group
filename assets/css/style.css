@@ -4547,3 +4547,292 @@ p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 }
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .hero-title {
+    font-size: 2.9rem;
+    line-height: 42px;
+    text-align: center;
+  }
+  .hero-text {
+    margin-block: 10px 40px;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    color: #d5d5d5;
+    line-height: normal;
+    text-align: center;
+  }
+  .hover-sideline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    background-color: var(--white);
+    transform: scaleY(0.6);
+    opacity: 1;
+    transition: var(--transition-2);
+  }
+  .about-talk {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 42px !important;
+  }
+  /* Only reverse the second .about-talk */
+  .about-talk:nth-of-type(3) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .workplace-page .about-heading {
+    margin-inline: auto;
+    color: var(--eerie-black-3);
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+  }
+  .about-content {
+    gap: 28px;
+  }
+  .about .container {
+    gap: 72px;
+  }
+  .section {
+    padding-block: 52px;
+  }
+  .stats-slider .stats-container h2 {
+    font-size: 6rem;
+    line-height: 100%;
+    width: 100%;
+  }
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    overflow-x: auto;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+  }
+  .card-container::-webkit-scrollbar {
+    display: block;
+    height: 8px; /* Adjust scrollbar thickness */
+  }
+
+  .card-containerr::-webkit-scrollbar-track {
+    background-color: transparent;
+    margin-top: 12px; /* Space between content and scrollbar */
+  }
+
+  .card-container::-webkit-scrollbar-thumb {
+    background-color: var(--pink-konga);
+    border-radius: 10px;
+  }
+
+  .wrapping {
+    min-height: 270px;
+    padding: 0;
+  }
+  .corporate {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    gap: 2.4rem;
+    border-radius: 8px;
+  }
+  .office,
+  .warehouse {
+    gap: 2rem;
+    padding: 24px;
+  }
+  .warehouse-content {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .section-title p {
+    color: var(--eerie-black-1);
+    margin: 0;
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--fontFamily-Poppins);
+  }
+  .retail {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 600px;
+  }
+  .retail-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .about-page .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+  }
+  .about-page .about-vision {
+    font-size: 30px;
+  }
+  .value-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .konga-glance {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    padding: 32px 12px;
+    background-color: #94004f;
+  }
+  .glance-subheading {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 0 12px;
+    line-height: normal;
+  }
+  .glance-stats {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    padding: 24px 12px 20px;
+  }
+  .stats-box {
+    position: relative;
+    padding: 20px;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 220px;
+  }
+  .text-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    color: #252525;
+    gap: 14px;
+    width: 100%;
+    padding: 14px 18px;
+  }
+  .strategy-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+  .board-page .container {
+    padding: 0 32px;
+  }
+  .service-page .service-content,
+  .workplace-page .service-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    padding: 0 12px;
+  }
+  .brands .headline-1 {
+    font-size: 2rem;
+  }
+  .brands-wrapper {
+    height: 120px;
+    display: flex;
+    gap: 32px;
+    overflow-x: auto;
+  }
+  .workplace-page .workplace-header {
+    color: var(--eerie-black-4);
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+  }
+  .workplace-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 24px;
+    margin: 0 12px;
+  }
+  .workplace-card {
+    width: 80vw;
+    border: 1px solid #ececec;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 1px 4px 0px hsla(0, 0%, 7%, 0.05);
+  }
+  .workplace-page .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+  }
+  .humansOfKonga img {
+    width: 100%;
+    margin-inline: auto;
+  }
+  .intern-head {
+    width: 100%;
+  }
+  .media-new-heading,
+  .intern-new-heading {
+    width: 100%;
+    font-size: 3rem;
+  }
+  .media-new-subheading,
+  .intern-new-subheading {
+    width: 90vw;
+  }
+  .intern-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 12px;
+    padding: 24px;
+  }
+  .intern-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ececec;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 1px 4px 0px hsla(0, 0%, 7%, 0.05);
+  }
+
+  .career-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 12px;
+    align-items: stretch;
+  }
+  .career-section .container {
+    margin-bottom: 32px;
+  }
+  .media-list li {
+    text-align: left;
+    margin-bottom: 12px;
+    list-style: disc !important;
+    margin-left: 18px;
+  }
+  .media-headings {
+    color: var(--eerie-black-1);
+    margin: 0;
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: var(--fontFamily-Poppins);
+    margin-bottom: 42px;
+  }
+}
