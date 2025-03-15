@@ -263,6 +263,21 @@
   z-index: 1;
 }
 
+.bottombox .btn {
+  position: relative;
+  color: var(--pink-konga);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  max-width: max-content;
+  border: 2px solid var(--pink-konga);
+  margin-top: 18px;
+  padding: 10px 32px;
+  overflow: hidden;
+  z-index: 1;
+}
+
 .btn::before {
   content: "";
   position: absolute;
@@ -849,7 +864,12 @@ body.nav-active {
   transform: translateX(20px);
 }
 
-.navbar-link .separator {
+.topbar-item .navbar-link:is(:hover, :focus-visible, .active) {
+  color: var(--pink-konga);
+  font-weight: 700;
+}
+
+.ar-link navb.separator {
   position: absolute;
   top: 50%;
   left: 0;
@@ -1107,7 +1127,8 @@ body.nav-active {
   height: 120px;
   display: flex;
   gap: 62px;
-  overflow-x: auto;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; /* Ensures smooth scrolling on iOS */
 }
 
 .swiper .brands-wrapper::-webkit-scrollbar {
@@ -3023,11 +3044,32 @@ body.nav-active {
   padding: 24px 12px;
 }
 
+.location-grids {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 12px;
+}
+
 .location-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  padding: 24px 16px;
+  border: 1px solid var(--pink-konga);
+  border-radius: 12px;
+  box-shadow: 0px 1px 4px 0px hsla(0, 0%, 7%, 0.05);
+}
+
+.location-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 320px;
   padding: 24px 16px;
   border: 1px solid var(--pink-konga);
   border-radius: 12px;
@@ -3106,6 +3148,13 @@ body.nav-active {
   font-size: 1.5rem;
   line-height: normal;
   font-weight: 500;
+  color: var(--eerie-black-3);
+}
+
+.content-box .work-details {
+  font-size: 2rem;
+  line-height: normal;
+  font-weight: 600;
   color: var(--eerie-black-3);
 }
 
@@ -3319,7 +3368,7 @@ body.nav-active {
   text-align: center;
   text-transform: uppercase;
   font-family: var(--fontFamily-Poppins);
-  margin-bottom: 64px;
+  margin-bottom: 32px;
 }
 
 .media-headings {
@@ -3330,7 +3379,7 @@ body.nav-active {
   text-align: left;
   text-transform: uppercase;
   font-family: var(--fontFamily-Poppins);
-  margin-bottom: 42px;
+  margin-bottom: 24px;
 }
 
 .media-text {
@@ -3362,6 +3411,16 @@ body.nav-active {
   font-family: var(--fontFamily-Poppins);
   margin-bottom: 12px;
   list-style: decimal !important;
+}
+
+.media-listss li {
+  text-align: left;
+  color: var(--eerie-black-1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: var(--fontFamily-Poppins);
+  margin: 0 24px;
+  list-style: disc !important;
 }
 
 .blog {
@@ -3527,6 +3586,22 @@ body.nav-active {
   line-height: 2rem;
 }
 
+.media-content {
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.media-contents {
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .news-grid {
@@ -3535,7 +3610,8 @@ body.nav-active {
 
   .side-stories {
     flex-direction: row;
-    overflow-x: auto;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch; /* Ensures smooth scrolling on iOS */
     padding-bottom: 10px;
   }
 
@@ -4345,6 +4421,17 @@ p {
   font-weight: 400;
 }
 
+.bullet-text::before {
+  content: "•"; /* This is the disc */
+  color: black; /* You can change the color if needed */
+  font-size: 2rem; /* Optional: adjust the size of the dot */
+  margin-right: 8px; /* Space between the dot and text */
+}
+
+.bullet-text {
+  margin-bottom: 0px !important;
+}
+
 /*-----------------------------------*\
 #CAREER SECTION CSS CODE
 \*-----------------------------------*/
@@ -4420,36 +4507,51 @@ p {
   .career-column {
     margin-bottom: 20px;
   }
-}
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 40px 0;
+  }
+  .footer-bottom .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 32px 0;
+  }
 
-.text-left {
-  text-align: left;
-}
+  .text-left {
+    text-align: left;
+  }
 
-.middle-text {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  align-items: left;
-}
+  .middle-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: left;
+  }
 
-.middle-text .workplace-header {
-  text-align: left;
-}
+  .middle-text .workplace-header {
+    text-align: left;
+  }
 
-.middle-text .humansOfKonga img {
-  width: 100%;
-}
+  .middle-text .humansOfKonga img {
+    width: 100%;
+  }
 
-.workplace-list-text {
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: normal;
-  color: var(--eerie-black-4);
-  font-family: var(--fontFamily-Poppins);
-  margin-bottom: 1.4rem;
-  list-style-type: square;
-  margin-left: 24px;
+  .workplace-list-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--eerie-black-4);
+    font-family: var(--fontFamily-Poppins);
+    margin-bottom: 1.4rem;
+    list-style-type: square;
+    margin-left: 24px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1390px) {
@@ -4826,13 +4928,39 @@ p {
     margin-left: 18px;
   }
   .media-headings {
-    color: var(--eerie-black-1);
-    margin: 0;
-    font-size: 3.2rem;
-    font-weight: 600;
+    font-size: 2.8rem;
+    margin-bottom: 18px;
+    line-height: 3.7rem;
     text-align: left;
-    text-transform: uppercase;
-    font-family: var(--fontFamily-Poppins);
-    margin-bottom: 42px;
+  }
+  .media-content {
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .media-contents {
+    gap: 28px;
+    align-items: flex-start;
+  }
+  .media-text {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    margin-left: 0;
+  }
+  .media-lists li {
+    text-align: left;
+    margin-bottom: 12px;
+    list-style: decimal !important;
+    margin-left: 18px;
+  }
+  .copyright {
+    color: #e0e0e0;
+    margin: 2rem 0;
+    text-align: left;
+  }
+  .location-grids {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    padding: 24px 12px;
   }
 }

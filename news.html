@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+        Primary Tags
+        -->
+    <title>Konga News | Konga Group</title>
+    <meta name="title" content="Konga News | Konga Group" />
+    <meta name="description" content="" />
+
+    <!--
+        Favicon
+        -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!--
+        Google Font Links
+        -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+        Custom CSS Links
+        -->
+    <link rel="stylesheet" href="./assets/css/style.css " />
+    <link
+      href="./assets/external/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./assets/external/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="./assets/external/aos/aos.css" rel="stylesheet" />
+
+    <!--
+        Preload Images
+        -->
+    <link rel="Preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+    <link rel="Preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+    <link rel="Preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+
+    <!-- =======================================================
+            * Developer Name: Ajose Damilare
+            * Developer URL: https://ajosedamilare.com/
+            * Updated: Aug 07 2024
+      ======================================================== -->
+  </head>
+  <body>
+    <!--
+    PRELOADER
+    -->
+    <!-- <div class="preload" data-preaload>
+      <div class="circle"></div>
+      <p class="text">Konga Group</p>
+    </div> -->
+
+    <!--
+        Top Bar
+    -->
+    <div class="topbar">
+      <div class="container">
+        <a href="location.html" class="topbar-item">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span"> Our Locations </span>
+        </a>
+
+        <div class="topbar-item item-2"></div>
+
+        <div class="topbar-link-nav">
+          <a href="career.html" class="topbar-item link">
+            <span class="span navbar-link"> Career </span>
+          </a>
+        </div>
+
+        <div class="topbar-link-nav">
+          <a href="contact.html" class="topbar-item link">
+            <span class="span navbar-link"> Contact Us </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      HEADER
+      -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            width="180"
+            height="52"
+            alt="Logo"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <!-- <a href="#" class="logo">
+                  <img
+                    src="./assets/images/logo.svg"
+                    width="160"
+                    height="50"
+                    alt="Logo"
+                  />
+                </a> -->
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link">
+                <div class="separator"></div>
+                <span class="span">Home</span>
+              </a>
+            </li>
+            <li class="navbar-item dropdown-item">
+              <a href="about.html" class="navbar-link dropdown-toggle">
+                <div class="separator"></div>
+                <div class="dropdown-link">
+                  <span class="span">Who we are</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+
+                <ul class="dropdown-menu">
+                  <li class="dropdown-subitem">
+                    <a href="about.html" class="dropdown-sublink">About Us</a>
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a href="about.html#mission-vision" class="dropdown-sublink"
+                      >Mission and Vision</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a href="timeline.html" class="dropdown-sublink"
+                      >Our Timeline</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a href="executive.html" class="dropdown-sublink"
+                      >Executive Leadership</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a href="board.html" class="dropdown-sublink"
+                      >Board Of Directors</a
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="navbar-item dropdown-item">
+              <a href="whatwedo.html" class="navbar-link dropdown-toggle">
+                <div class="separator"></div>
+                <div class="dropdown-link">
+                  <span class="span">What we do</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+
+                <ul class="dropdown-menu">
+                  <li class="dropdown-subitem">
+                    <a href="whatwedo.html" class="dropdown-sublink"
+                      >Overview</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a href="https://www.konga.com/" class="dropdown-sublink"
+                      >Konga.com</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a
+                      href="https://www.konga.com/content/Health"
+                      class="dropdown-sublink"
+                      >Konga Health</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a href="https://www.kongapay.com/" class="dropdown-sublink"
+                      >KongaPay</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a href="https://travel.konga.com/" class="dropdown-sublink"
+                      >Konga Travels</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a
+                      href="https://www.instagram.com/tdilife_/"
+                      class="dropdown-sublink"
+                      >TDilife</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a
+                      href="https://logistics.konga.com/"
+                      class="dropdown-sublink"
+                      >Konga Logistics</a
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="navbar-item dropdown-item">
+              <a href="workplace.html" class="navbar-link dropdown-toggle">
+                <div class="separator"></div>
+                <div class="dropdown-link">
+                  <span class="span">Workplace</span>
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+
+                <ul class="dropdown-menu">
+                  <li class="dropdown-subitem">
+                    <a href="diversity.html" class="dropdown-sublink"
+                      >Diversity</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a href="lifeatkonga.html" class="dropdown-sublink"
+                      >Life At Konga</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a href="career.html" class="dropdown-sublink"
+                      >Work With Us</a
+                    >
+                  </li>
+
+                  <li class="dropdown-subitem">
+                    <a href="intern.html" class="dropdown-sublink"
+                      >Intern Stories</a
+                    >
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="media.html" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+                <span class="span">Media</span>
+              </a>
+            </li>
+          </ul>
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Our Locations</p>
+            <a href="location.html" class="body-1"> View All </a>
+            <div class="separator"></div>
+            <p class="contact-label">What to Reach out?</p>
+            <a
+              href="contact.html"
+              class="body-1 contact-number hover-underline"
+            >
+              Contact Us
+            </a>
+          </div>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-content">
+        <div
+          class="breadcrumbs"
+          style="background-image: url('./assets/images/newspaper.jpg')"
+        >
+          <div class="container content">
+            <h2>Konga News</h2>
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="media.html">Media</a></li>
+              <li>Konga News</li>
+            </ol>
+          </div>
+        </div>
+
+        <section class="section media-page">
+          <div class="container">
+            <!-- Blog Section Section -->
+            <section class="section about" aria-label="about" id="about">
+              <div class="blog">
+                <div class="content">
+                  <div class="blog-container">
+                    <div class="blog-card">
+                      <div class="blog-image">
+                        <img
+                          src="https://digitaltimesng.com/wp-content/uploads/2025/03/KONGA-NEWEST.jpg"
+                          alt="Blog Thumbnail"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="blog-footer">
+                          <span class="blog-date">E-Commerce</span>
+                          <span class="blog-date">Mar 5, 2025</span>
+                        </div>
+                        <a
+                          href="https://digitaltimesng.com/konga-woos-shoppers-with-berekete-sales/"
+                          target="_blank"
+                          class="blog-title"
+                        >
+                          Konga Woos Shoppers With Berekete Sales
+                        </a>
+                        <p class="blog-description">
+                          Scheduled to run from March 1st to March 31st, this
+                          campaign promises to deliver unbeatable deals across
+                          all product categories, catering to new and existing
+                          customers. For many shoppers, Konga Berekete is more
+                          than just a sale — it’s a festival of discounts and
+                          savings. This year, the campaign coincides with the
+                          holy month of Ramadan, and Konga has promised a
+                          special Ramadan sale. This makes it an ideal
+                          opportunity for Muslims observing the fast to stock up
+                          on essentials and more. From groceries to household
+                          items, electronics to fashion, Konga has curated a
+                          wide range of products to meet the diverse needs of
+                          its customers during this special period.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="blog-card">
+                      <div class="blog-image">
+                        <img
+                          src="./assets/images/newsss.jpg"
+                          alt="Blog Thumbnail"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="blog-footer">
+                          <span class="blog-date">Business</span>
+                          <span class="blog-date">Feb 27, 2025</span>
+                        </div>
+                        <a
+                          href="https://gentechnews.com.ng/konga-communications-hosts-nbc-delegation-reaffirms-commitment-to-excellence-and-compliance/"
+                          target="_blank"
+                          class="blog-title"
+                        >
+                          Konga Communications Hosts NBC Delegation, Reaffirms
+                          Commitment to Excellence and Compliance
+                        </a>
+                        <p class="blog-description">
+                          It was a landmark day at Konga Communications as the
+                          team from the National Broadcasting Commission (NBC)
+                          paid a working visit to the studios of KongaTV and
+                          KongaFM 103.7 on Monday, February 24, 2025. The visit
+                          marked a significant step in the station’s journey
+                          toward delivering high-quality, engaging, and
+                          regulatory-compliant content. <br />
+                          Led by the Director General of the NBC, Charles
+                          Ebuebu, the delegation also included the Lagos Zonal
+                          Director, Raphael Akpan, and Director of Public
+                          Affairs, Susan Obi. They were warmly received by the
+                          leadership of Konga Communications, including Head
+                          (KongaTV and KongaFM), Ifeoma Ajumobi; Team Lead
+                          KongaTV, Ayo Jimi; Team Lead KongaFM, Chidi Okenne,
+                          and Team Lead Operations, Ahmed Jaiyeola.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="blog-card">
+                      <div class="blog-image">
+                        <img
+                          src="./assets/images/fm-konga.jpg"
+                          alt="Blog Thumbnail"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="blog-footer">
+                          <span class="blog-date">Promotions</span>
+                          <span class="blog-date">Feb 18, 2025</span>
+                        </div>
+                        <a
+                          href="https://eworldnews.com.ng/2025/02/18/kongafm-103-7-launches-shop-on-radio/"
+                          target="_blank"
+                          class="blog-title"
+                        >
+                          KongaFM -103.7 Launches “Shop On Radio”
+                        </a>
+                        <p class="blog-description">
+                          For the first time in Africa, radio is no longer just
+                          about listening to music and advertisements; it’s
+                          added shopping. KongaFM -103.7, Nigeria’s pioneering
+                          Hit Music & Commerce radio station, is set to change
+                          the way Nigerians buy and sell with the official
+                          launch of “Shop On Radio” on Monday, February 24th,
+                          2025. This is a game changer at a time when the NCC
+                          approved an increase in data costs by 50%.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="blog-card">
+                      <div class="blog-image">
+                        <img
+                          src="https://www.bellanaija.com/wp-content/uploads/2025/02/KongaFM-On-Air.jpeg"
+                          alt="Blog Thumbnail"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="blog-footer">
+                          <span class="blog-date">Promotions</span>
+                          <span class="blog-date">Feb 3, 2025</span>
+                        </div>
+                        <a
+                          href="https://www.bellanaija.com/2025/02/konga-103-7fm-launches/"
+                          target="_blank"
+                          class="blog-title"
+                        >
+                          Konga 103.7FM Launches With Free Ads for Businesses
+                        </a>
+                        <p class="blog-description">
+                          Lagos has a new powerhouse on the airwaves, Konga
+                          103.7FM. This disruptive hit music and commerce radio
+                          station is out to set a new standard in the
+                          broadcasting industry, offering an exciting blend of
+                          entertainment and commercial opportunities. While
+                          Lagos residents can tune in terrestrially, the rest of
+                          the world is not left out, as Konga FM also streams
+                          online, allowing global audiences to connect to its
+                          unique offerings.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="blog-card">
+                      <div class="blog-image">
+                        <img
+                          src="https://digitaltimesng.com/wp-content/uploads/2024/12/PRINCE-EKEH.jpeg"
+                          alt="Blog Thumbnail"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="blog-footer">
+                          <span class="blog-date">Technology</span>
+                          <span class="blog-date">Dec 11, 2025</span>
+                        </div>
+                        <a
+                          href="https://digitaltimesng.com/konga-ceo-optimistic-about-nigerias-e-commerce-growth-despite-challenges/"
+                          target="_blank"
+                          class="blog-title"
+                        >
+                          Konga CEO Optimistic About Nigeria’s E-Commerce Growth
+                          Despite Challenges
+                        </a>
+                        <p class="blog-description">
+                          Prince Nnamdi Ekeh, CEO of Africa’s foremost online
+                          shopping platform, Konga Group, has expressed optimism
+                          in the E-commerce sector despite the current
+                          challenges facing the e-commerce business in Nigeria
+                          and most parts of the African continent. Speaking at
+                          the 6th Edition of Nigeria sales conference organized
+                          by George Emetuche, the CEO of the Selling Champion
+                          Ltd, held at the Welcome Centre Hotel Lagos, Prince
+                          Nnamdi Ekeh spoke on the topic “The Nigeria E-Commerce
+                          and Retail Business: challenges and prospects.” In his
+                          address, Prince Ekeh outlined key challenges hampering
+                          the growth of the e-commerce sector in Nigeria and
+                          pointed to the overdependence on imported goods,
+                          unstable exchange rates, logistical inefficiencies,
+                          corruption, and rising insecurity as significant
+                          obstacles.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="blog-card">
+                      <div class="blog-image">
+                        <img
+                          src="https://digitaltimesng.com/wp-content/uploads/2024/07/LOREAL-2.png"
+                          alt="Blog Thumbnail"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="blog-footer">
+                          <span class="blog-date">Beauty & Health</span>
+                          <span class="blog-date">Jul 14, 2024</span>
+                        </div>
+                        <a
+                          href="https://digitaltimesng.com/loreal-strikes-exclusive-launch-agreement-with-konga/"
+                          target="_blank"
+                          class="blog-title"
+                        >
+                          L’Oreal Strikes Exclusive Launch Agreement With Konga
+                        </a>
+                        <p class="blog-description">
+                          Konga Health, Nigeria’s premier digital healthcare
+                          distribution company, has sealed an exclusive
+                          partnership with CeraVe, a leading global skincare
+                          brand under the L’Oréal umbrella, to launch its
+                          product in the country. Digital TimesNG reports that
+                          L’Oréal is the world leader in beauty: makeup,
+                          cosmetics, hair care, and perfume in quality,
+                          efficacy, and safety. Through Konga Health, a
+                          technology-driven healthcare solutions company focused
+                          on revolutionizing the healthcare value chain and a
+                          member of the Konga Group, this exclusive
+                          collaboration will debut with the renowned CeraVe
+                          line, offering unbeatable prices and free delivery to
+                          some locations Nationwide. This enhanced partnership
+                          empowers Konga Health to onboard pharmacists,
+                          physicians, and other healthcare providers Nationwide
+                          to support the distribution of CeraVe’s product line.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="blog-card">
+                      <div class="blog-image">
+                        <img
+                          src="https://digitaltimesng.com/wp-content/uploads/2024/08/KONGA-STARLINK-WEEK.jpg"
+                          alt="Blog Thumbnail"
+                        />
+                      </div>
+                      <div class="blog-content">
+                        <div class="blog-footer">
+                          <span class="blog-date">E-Commerce</span>
+                          <span class="blog-date">Aug 26, 2024</span>
+                        </div>
+                        <a
+                          href="https://digitaltimesng.com/konga-starlink-week-begins-with-discounts-on-high-speed-internet-kits/"
+                          target="_blank"
+                          class="blog-title"
+                        >
+                          Konga Starlink Week Begins With Discounts On
+                          High-Speed Internet Kits
+                        </a>
+                        <p class="blog-description">
+                          This limited-time campaign will offer mouthwatering
+                          discounts and other perks on Starlink kits, and will
+                          run from Monday, August 26th to Saturday, August 31st,
+                          2024, according to a statement by Konga. Konga said
+                          that as the only authorized shop-in-shop for Starlink
+                          in Nigeria, it is committed to providing customers
+                          with access to this revolutionary satellite internet
+                          service. During Starlink Week, Konga will be slashing
+                          the price of Starlink kits and accessories, making it
+                          more accessible than ever before.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <footer class="section footer text-center">
+          <div class="container">
+            <div class="footer-top grid-list">
+              <div class="footer-brand">
+                <h3>Who We Are</h3>
+                <ul class="footer-list">
+                  <li>
+                    <a
+                      href="about.html#mission-vision"
+                      class="label-2 footer-link hover-underline"
+                      >Mission and Vision</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="timeline.html"
+                      class="label-2 footer-link hover-underline"
+                      >Our Timeline</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="leadership.html"
+                      class="label-2 footer-link hover-underline"
+                      >Our Leadership</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-brand">
+                <h3>What We Do</h3>
+                <ul class="footer-list">
+                  <li>
+                    <a
+                      href="https://www.konga.com/"
+                      class="label-2 footer-link hover-underline"
+                      >Konga.com</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.konga.com/content/Health"
+                      class="label-2 footer-link hover-underline"
+                      >Konga Health</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.kongapay.com/"
+                      class="label-2 footer-link hover-underline"
+                      >KongaPay</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://travel.konga.com/"
+                      class="label-2 footer-link hover-underline"
+                      >Konga Travels & Tours</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/tdilife_/"
+                      class="label-2 footer-link hover-underline"
+                      >TDilife</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://logistics.konga.com/"
+                      class="label-2 footer-link hover-underline"
+                      >Konga Logistics</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-brand">
+                <h3>Our Workplace</h3>
+                <ul class="footer-list">
+                  <li>
+                    <a
+                      href="diversity.html"
+                      class="label-2 footer-link hover-underline"
+                      >Diversity</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="intern.html"
+                      class="label-2 footer-link hover-underline"
+                      >Intern Stories</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="career.html"
+                      class="label-2 footer-link hover-underline"
+                      >Careers</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="location.html"
+                      class="label-2 footer-link hover-underline"
+                      >Locations</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-brand">
+                <h3>Media</h3>
+                <ul class="footer-list">
+                  <li>
+                    <a
+                      href="media.html"
+                      class="label-2 footer-link hover-underline"
+                      >News</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="media-kit.html"
+                      class="label-2 footer-link hover-underline"
+                      >Media Kit</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-brand">
+                <h3>Policies</h3>
+                <ul class="footer-list">
+                  <li>
+                    <a
+                      href="privacy-policy.html"
+                      class="label-2 footer-link hover-underline"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="cookie-policy.html"
+                      class="label-2 footer-link hover-underline"
+                      >Cookie Policy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-separator"></div>
+
+            <div class="footer-bottom">
+              <div class="left-side">
+                <div class="logo">
+                  <a href="index.html" class="logo">
+                    <img
+                      src="./assets/images/logo.svg"
+                      width="180"
+                      height="52"
+                      alt="Logo"
+                    />
+                  </a>
+                </div>
+                <p class="copyright">
+                  Konga Group &copy; 2025. All Rights Reserved
+                </p>
+              </div>
+
+              <div class="right-side">
+                <div class="social-links">
+                  <a href="https://www.youtube.com/@ShopKonga">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                  <a href="https://www.facebook.com/ShopKonga/">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                  <a href="https://x.com/ShopKonga">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                  <a href="https://www.instagram.com/shopkonga/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                  <a href="https://www.tiktok.com/@konganigeria">
+                    <ion-icon name="logo-tiktok"></ion-icon>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/konga-group-nigeria/posts/?feedView=all"
+                  >
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 
+                  - #BACK TO TOP
+              -->
+
+            <a
+              href="#top"
+              class="back-top-btn active"
+              aria-label="back to top"
+              data-back-top-btn
+            >
+              <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <!--Custom js link-->
+    <script src="./assets/js/script.js"></script>
+    <!--Ionicon Link-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
