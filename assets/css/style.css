@@ -760,6 +760,7 @@ body.nav-active {
 
 .dropdown-item:is(:hover, :focus-visible, .active) .dropdown-menu {
   max-height: 1000px;
+  margin: -80px 0 0 0;
   transition: max-height 0.4s ease-in;
 }
 
@@ -773,12 +774,16 @@ body.nav-active {
 }
 
 .dropdown-sublink {
-  padding-inline-start: 20px;
+  padding-inline-start: 0px;
   padding-block: 10px;
   font-size: 1.3rem;
   text-transform: uppercase;
   color: var(--white);
   transition: var(--transition-1);
+}
+
+.navbar-link .dropdown-toggle .active {
+  display: none !important;
 }
 
 @media screen and (min-width: 1200px) {
@@ -869,7 +874,7 @@ body.nav-active {
   font-weight: 700;
 }
 
-.ar-link navb.separator {
+.navbar-link .separator {
   position: absolute;
   top: 50%;
   left: 0;
@@ -4963,6 +4968,28 @@ p {
     gap: 24px;
     padding: 24px 12px;
   }
+  .contact-container {
+    display: grid !important;
+    grid-template-rows: 1fr 1fr !important;
+    padding: 0px !important;
+    margin-inline: auto;
+  }
+  .contact-container .left-side,
+  .contact-container .right-side {
+    padding: 24px 12px !important;
+    margin-inline: auto !important;
+    max-height: 20% !important;
+  }
+  .workplace-page .location-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    padding: 24px 12px;
+  }
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Contact Us Full Page */
@@ -4977,7 +5004,7 @@ p {
 
 .contact-container .left-side,
 .contact-container .right-side {
-  padding: 52px 32px;
+  padding: 24px 12px;
   margin-inline: 20px;
 }
 
@@ -5129,6 +5156,41 @@ form {
   .container {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .header .container {
+    flex-direction: row;
+  }
+  /* 
+  .navbar-list .separator {
+    display: none;
+  } */
+
+  .navbar-link {
+    position: relative;
+    font-size: var(--fontSize-label-2);
+    text-transform: uppercase;
+    padding-block: 10px;
+    margin-block: 10px;
+    max-width: unset;
+  }
+
+  .navbar-list .navbar-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-item .dropdown-item {
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .dropdown-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6px 0;
   }
 
   .left-side,
