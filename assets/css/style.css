@@ -760,7 +760,7 @@ body.nav-active {
 
 .dropdown-item:is(:hover, :focus-visible, .active) .dropdown-menu {
   max-height: 1000px;
-  margin: -80px 0 0 0;
+  padding-inline: 20px;
   transition: max-height 0.4s ease-in;
 }
 
@@ -5221,5 +5221,11 @@ form {
 
   .social-box-tile {
     gap: 14px;
+  }
+
+  .dropdown-item:is(:hover, :focus-visible, .active) .dropdown-menu {
+    max-height: 1000px;
+    margin: -80px 0 0;
+    transition: max-height 0.4s ease-in;
   }
 }
